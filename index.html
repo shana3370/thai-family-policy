@@ -36,26 +36,29 @@ a{color:var(--green)}
 <tr><td><b>ข้อมูลเซฟเกม</b> (ครอบครัว ความคืบหน้า การตั้งค่า รายการที่ซื้อ ชื่อตระกูลที่ผู้เล่นตั้ง)</td><td>ตลอดที่เล่น</td><td><b>ในเครื่องของคุณ</b> เท่านั้น (ผู้เล่นแบบ Guest)</td><td>ให้เกมเล่นต่อได้</td></tr>
 <tr><td><b>คลาวด์เซฟ (ไม่บังคับ)</b>: รหัสบัญชีผู้ใช้ (Firebase UID), อีเมลบัญชี Google, ไฟล์เซฟ, รหัสอุปกรณ์แบบสุ่มที่เกมสร้างเอง, เวลาที่บันทึก</td><td><b>เฉพาะเมื่อคุณกด "เข้าสู่ระบบ Google"</b></td><td>Google Firebase (Authentication และ Firestore) ที่ภูมิภาคเอเชียตะวันออกเฉียงใต้</td><td>สำรองและกู้คืนเซฟ ย้ายเครื่อง</td></tr>
 <tr><td><b>การซื้อในเกม</b></td><td>เมื่อซื้อ</td><td>ประมวลผลโดย Google Play (เราไม่เห็นเลขบัตร) เราได้รับหลักฐานการซื้อเพื่อมอบของ</td><td>มอบสินค้าและป้องกันการซื้อซ้ำ</td></tr>
+<tr><td><b>โฆษณา</b>: รหัสโฆษณาของอุปกรณ์ (Advertising ID) ข้อมูลอุปกรณ์ ตำแหน่งโดยประมาณจาก IP การโต้ตอบกับโฆษณา</td><td>เมื่อคุณยอมรับตอนเปิดเกมครั้งแรก และเมื่อกดดูโฆษณา</td><td>Google AdMob (Google LLC) และพันธมิตรโฆษณาของ Google</td><td>แสดงโฆษณาแบบดูเพื่อรับรางวัล ซึ่งเป็นรายได้ของเกมฟรี</td></tr>
 </table>
 <p>เราไม่เก็บ: รายชื่อติดต่อ, ตำแหน่งแม่นยำ, ภาพ/เสียงจากกล้องหรือไมโครโฟน, เลขบัตรหรือบัญชีธนาคาร
 ชื่อตัวละครและชื่อตระกูลในเกมเป็นข้อมูลที่ผู้เล่นตั้งเอง — ขอให้ไม่ใช้ข้อมูลส่วนตัวจริงของผู้อื่น</p>
-<p>หากในอนาคตเกมเพิ่มโฆษณา สถิติการเล่น หรือรายงานข้อผิดพลาด เราจะปรับปรุงนโยบายนี้ แจ้งในเกม และขอความยินยอมจากคุณก่อนเริ่มเก็บข้อมูลดังกล่าว</p>
+<p>หากในอนาคตเกมเพิ่มสถิติการเล่นหรือรายงานข้อผิดพลาด เราจะปรับปรุงนโยบายนี้ แจ้งในเกม และขอความยินยอมจากคุณก่อนเริ่มเก็บข้อมูลดังกล่าว</p>
 
 <h3>3. ฐานทางกฎหมายและตัวเลือกของคุณ</h3>
 <ul>
 <li>เซฟในเครื่อง: จำเป็นต่อการให้บริการเกม</li>
 <li>คลาวด์เซฟ: ตามความยินยอมของคุณ (กดเข้าสู่ระบบเอง) ออกจากระบบหรือลบข้อมูลได้ตลอด</li>
+<li>โฆษณา: ตามความยินยอมของคุณ ต้องยอมรับในการ์ดความเป็นส่วนตัวตอนเปิดเกมครั้งแรกจึงจะเล่นได้ หากไม่ยอมรับ เกมจะปิด ถอนความยินยอมได้โดยแจ้งเรา หรือถอนการติดตั้งเกม</li>
 <li>การซื้อ: เพื่อทำตามสัญญาซื้อขาย</li>
 </ul>
 
 <h3>4. การเปิดเผยและการโอนข้อมูล</h3>
-<p>เราไม่ขายข้อมูลส่วนบุคคล เราส่งข้อมูลให้เฉพาะผู้ให้บริการที่ทำงานแทนเรา (Google/Firebase, Google Play)
+<p>เราไม่ขายข้อมูลส่วนบุคคล เราส่งข้อมูลให้เฉพาะผู้ให้บริการที่ทำงานแทนเรา (Google/Firebase, Google Play, Google AdMob)
 เซิร์ฟเวอร์ของผู้ให้บริการอาจอยู่นอกประเทศไทย ซึ่งอยู่ภายใต้ข้อตกลงคุ้มครองข้อมูลของผู้ให้บริการนั้น</p>
 
 <h3>5. ระยะเวลาเก็บ</h3>
 <ul>
 <li>ข้อมูลในเครื่อง: จนกว่าคุณลบเกมหรือล้างข้อมูลแอป</li>
 <li>คลาวด์เซฟ: จนกว่าคุณลบเอง (<b>ตั้งค่า → ลบข้อมูลของฉันบนคลาวด์</b>) หรือขอให้เราลบ หรือบัญชีไม่มีการใช้งานเกิน 12 เดือน</li>
+<li>ข้อมูลโฆษณา: ตามที่ Google AdMob กำหนด ดู <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></li>
 </ul>
 
 <h3>6. สิทธิ์ของคุณ</h3>
@@ -84,18 +87,19 @@ a{color:var(--green)}
 <tr><td><b>Save data</b> (family, progress, settings, purchases, the family name you choose)</td><td>While playing</td><td><b>On your device only</b> (guest players)</td><td>So the game can continue</td></tr>
 <tr><td><b>Cloud save (optional)</b>: account ID (Firebase UID), Google account e-mail, save file, a random device ID created by the game, timestamps</td><td><b>Only if you tap "Sign in with Google"</b></td><td>Google Firebase (Authentication, Firestore), region Southeast Asia</td><td>Back up / restore / move devices</td></tr>
 <tr><td><b>Purchases</b></td><td>When you buy</td><td>Processed by Google Play (we never see card numbers); we receive purchase receipts to deliver items</td><td>Deliver items, prevent duplicates</td></tr>
+<tr><td><b>Advertising</b>: advertising ID, device info, approximate location from IP, ad interactions</td><td>After you accept at first launch, and when you watch an ad</td><td>Google AdMob (Google LLC) and Google's advertising partners</td><td>Rewarded ads that fund the free game</td></tr>
 </table>
 <p>We do not collect contacts, precise location, camera or microphone data, or card/bank numbers. Character and family names are typed by you; please do not use real personal details of other people.</p>
-<p>If the game later adds advertising, analytics or crash reports, we will update this policy, tell you in the game, and ask for your consent before collecting such data.</p>
+<p>If the game later adds analytics or crash reports, we will update this policy, tell you in the game, and ask for your consent before collecting such data.</p>
 
 <h3>3. Legal basis and your choices</h3>
-<p>Local save: needed to provide the game. Cloud save: your consent (you sign in yourself; you can sign out or delete at any time). Purchases: performance of the sale contract.</p>
+<p>Local save: needed to provide the game. Cloud save: your consent (you sign in yourself; you can sign out or delete at any time). Advertising: your consent; you must accept on the privacy card at first launch to play, and if you decline the game closes. You can withdraw consent by contacting us or uninstalling the game. Purchases: performance of the sale contract.</p>
 
 <h3>4. Sharing and transfers</h3>
-<p>We do not sell personal data. We share it only with providers acting for us (Google/Firebase, Google Play). Their servers may be outside Thailand.</p>
+<p>We do not sell personal data. We share it only with providers acting for us (Google/Firebase, Google Play, Google AdMob). Their servers may be outside Thailand.</p>
 
 <h3>5. Retention</h3>
-<p>Local data until you uninstall or clear app data. Cloud save until you delete it (<b>Settings → Delete my cloud data</b>), ask us to, or the account is inactive for more than 12 months.</p>
+<p>Local data until you uninstall or clear app data. Cloud save until you delete it (<b>Settings → Delete my cloud data</b>), ask us to, or the account is inactive for more than 12 months. Advertising data is kept as set by Google AdMob, see <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
 
 <h3>6. Your rights</h3>
 <p>You may request access, correction, deletion, withdrawal of consent, objection, a copy, or restriction by writing to <a href="mailto:shanano3370@gmail.com">shanano3370@gmail.com</a>; we reply within 30 days. You can delete the cloud data yourself in the game, and you may complain to Thailand's Personal Data Protection Committee.</p>
