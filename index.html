@@ -36,11 +36,11 @@ a{color:var(--green)}
 <tr><td><b>ข้อมูลเซฟเกม</b> (ครอบครัว ความคืบหน้า การตั้งค่า รายการที่ซื้อ ชื่อตระกูลที่ผู้เล่นตั้ง)</td><td>ตลอดที่เล่น</td><td><b>ในเครื่องของคุณ</b> เท่านั้น (ผู้เล่นแบบ Guest)</td><td>ให้เกมเล่นต่อได้</td></tr>
 <tr><td><b>คลาวด์เซฟ (ไม่บังคับ)</b>: รหัสบัญชีผู้ใช้ (Firebase UID), อีเมลบัญชี Google, ไฟล์เซฟ, รหัสอุปกรณ์แบบสุ่มที่เกมสร้างเอง, เวลาที่บันทึก</td><td><b>เฉพาะเมื่อคุณกด "เข้าสู่ระบบ Google"</b></td><td>Google Firebase (Authentication และ Firestore) ที่ภูมิภาคเอเชียตะวันออกเฉียงใต้</td><td>สำรองและกู้คืนเซฟ ย้ายเครื่อง</td></tr>
 <tr><td><b>การซื้อในเกม</b></td><td>เมื่อซื้อ</td><td>ประมวลผลโดย Google Play (เราไม่เห็นเลขบัตร) เราได้รับหลักฐานการซื้อเพื่อมอบของ</td><td>มอบสินค้าและป้องกันการซื้อซ้ำ</td></tr>
-<tr><td><b>โฆษณา</b>: รหัสโฆษณาของอุปกรณ์ (Advertising ID) ข้อมูลอุปกรณ์ ตำแหน่งโดยประมาณจาก IP การโต้ตอบกับโฆษณา</td><td>เมื่อคุณยอมรับตอนเปิดเกมครั้งแรก และเมื่อกดดูโฆษณา</td><td>Google AdMob (Google LLC) และพันธมิตรโฆษณาของ Google</td><td>แสดงโฆษณาแบบดูเพื่อรับรางวัล ซึ่งเป็นรายได้ของเกมฟรี</td></tr>
+<tr><td><b>โฆษณา</b>: รหัสโฆษณาของอุปกรณ์ (Advertising ID) ข้อมูลอุปกรณ์ ตำแหน่งโดยประมาณจาก IP การโต้ตอบกับโฆษณา ข้อมูลการวินิจฉัยและบันทึกการขัดข้องของระบบโฆษณา</td><td>เมื่อคุณยอมรับตอนเปิดเกมครั้งแรก และเมื่อกดดูโฆษณา</td><td>Google AdMob (Google LLC) และพันธมิตรโฆษณาของ Google</td><td>แสดงโฆษณาแบบดูเพื่อรับรางวัล ซึ่งเป็นรายได้ของเกมฟรี วัดผลโฆษณา และป้องกันการโกง</td></tr>
 </table>
 <p>เราไม่เก็บ: รายชื่อติดต่อ, ตำแหน่งแม่นยำ, ภาพ/เสียงจากกล้องหรือไมโครโฟน, เลขบัตรหรือบัญชีธนาคาร
 ชื่อตัวละครและชื่อตระกูลในเกมเป็นข้อมูลที่ผู้เล่นตั้งเอง — ขอให้ไม่ใช้ข้อมูลส่วนตัวจริงของผู้อื่น</p>
-<p>หากในอนาคตเกมเพิ่มสถิติการเล่นหรือรายงานข้อผิดพลาด เราจะปรับปรุงนโยบายนี้ แจ้งในเกม และขอความยินยอมจากคุณก่อนเริ่มเก็บข้อมูลดังกล่าว</p>
+<p>ตัวเกมเองยังไม่มีระบบสถิติการเล่นหรือรายงานข้อผิดพลาดแยกต่างหาก หากเพิ่มในอนาคต เราจะปรับปรุงนโยบายนี้ แจ้งในเกม และขอความยินยอมจากคุณก่อนเริ่มเก็บข้อมูลดังกล่าว</p>
 
 <h3>3. ฐานทางกฎหมายและตัวเลือกของคุณ</h3>
 <ul>
@@ -87,10 +87,10 @@ a{color:var(--green)}
 <tr><td><b>Save data</b> (family, progress, settings, purchases, the family name you choose)</td><td>While playing</td><td><b>On your device only</b> (guest players)</td><td>So the game can continue</td></tr>
 <tr><td><b>Cloud save (optional)</b>: account ID (Firebase UID), Google account e-mail, save file, a random device ID created by the game, timestamps</td><td><b>Only if you tap "Sign in with Google"</b></td><td>Google Firebase (Authentication, Firestore), region Southeast Asia</td><td>Back up / restore / move devices</td></tr>
 <tr><td><b>Purchases</b></td><td>When you buy</td><td>Processed by Google Play (we never see card numbers); we receive purchase receipts to deliver items</td><td>Deliver items, prevent duplicates</td></tr>
-<tr><td><b>Advertising</b>: advertising ID, device info, approximate location from IP, ad interactions</td><td>After you accept at first launch, and when you watch an ad</td><td>Google AdMob (Google LLC) and Google's advertising partners</td><td>Rewarded ads that fund the free game</td></tr>
+<tr><td><b>Advertising</b>: advertising ID, device info, approximate location from IP, ad interactions, diagnostics and crash logs of the ad SDK</td><td>After you accept at first launch, and when you watch an ad</td><td>Google AdMob (Google LLC) and Google's advertising partners</td><td>Rewarded ads that fund the free game, ad measurement, fraud prevention</td></tr>
 </table>
 <p>We do not collect contacts, precise location, camera or microphone data, or card/bank numbers. Character and family names are typed by you; please do not use real personal details of other people.</p>
-<p>If the game later adds analytics or crash reports, we will update this policy, tell you in the game, and ask for your consent before collecting such data.</p>
+<p>The game itself has no separate analytics or crash-report service yet. If one is added later, we will update this policy, tell you in the game, and ask for your consent before collecting such data.</p>
 
 <h3>3. Legal basis and your choices</h3>
 <p>Local save: needed to provide the game. Cloud save: your consent (you sign in yourself; you can sign out or delete at any time). Advertising: your consent; you must accept on the privacy card at first launch to play, and if you decline the game closes. You can withdraw consent by contacting us or uninstalling the game. Purchases: performance of the sale contract.</p>
